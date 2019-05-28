@@ -1,0 +1,14 @@
+# https://hub.docker.com/_/node
+image: "node:8.16.0-alpine"
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install
+  - ls
+
+test_ext:
+  - tsc -p ./
+  - node ./node_modules/vscode/bin/test
