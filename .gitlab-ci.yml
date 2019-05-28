@@ -1,12 +1,12 @@
 # https://hub.docker.com/_/node
-image: "node:8.16.0-jessie-slim"
+image: "node:8.16.0-alpine"
 
 cache:
   paths:
     - node_modules/
 
 before_script:
-  - apt-get install node-typescript -y
+  - npm install -g typescript
   - npm install
   - ls
 
