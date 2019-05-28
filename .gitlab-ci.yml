@@ -9,6 +9,7 @@ before_script:
   - npm install -g typescript vscode
   - npm install
   - mv ./bin/install ./node_modules/vscode/bin/install
+  - node ./node_modules/vscode/bin/install
   - ls
 
 test:
