@@ -6,7 +6,7 @@ cache:
     - node_modules/
 
 before_script:
-  - npm install -g typescript
+  - npm install -g typescript vscode
   - npm install
   - ls
 
