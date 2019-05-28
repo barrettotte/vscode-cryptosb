@@ -1,6 +1,8 @@
 {
 	"name": "vscode-cryptosb",
 	"displayName": "vscode-cryptosb",
+	"author": "Barrett Otte",
+	"license": "MIT",
 	"description": "Display up to 3 cryptocurrency prices in status bar using CryptoCompare API",
 	"version": "0.0.1",
 	"publisher": "barrettotte",
@@ -17,7 +19,7 @@
 	"activationEvents": [
 		"*"
 	],
-	"main": "./out/extension.js",
+	"main": "./dist/extension",
 	"contributes": {
 		"commands": [
 			{
@@ -27,35 +29,48 @@
 		],
 		"configuration": {
 			"properties": {
-				"vscode-cryptosb.fiat":{
+				"vscode-cryptosb.fiat": {
 					"type": "string",
 					"default": "USD",
 					"description": "The FIAT currency to display cryptocurrency prices in."
 				},
-				"vscode-cryptosb.currencies":{
+				"vscode-cryptosb.currencies": {
 					"type": "array",
-					"default": ["BTC", "ETH", "LTC"],
+					"default": [
+						"BTC",
+						"ETH",
+						"LTC"
+					],
 					"description": "List of cryptocurrencies to track (up to 3)."
 				},
-				"vscode-cryptosb.refreshInterval":{
+				"vscode-cryptosb.refreshInterval": {
 					"type": "number",
-					"default": 2000,
+					"default": 60000,
 					"description": "Refresh rate to update cryptocurrency price."
 				}
 			}
 		}
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "webpack --mode none",
+		"compile:dev": "tsc -p ./",
+		"watch:dev": "tsc -watch -p ./",
+		"watch": "webpack --mode none --watch",
 		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+		"test": "npm run compile:dev && node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
+		"@types/mocha": "^2.2.42",
 		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
+		"@types/webpack": "^4.4.27",
+		"ts-loader": "^6.0.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.34",
+		"webpack": "^4.30.0",
+		"webpack-cli": "^3.3.0"
+	},
+	"dependencies": {
+		"tslint": "^5.16.0"
 	}
 }
