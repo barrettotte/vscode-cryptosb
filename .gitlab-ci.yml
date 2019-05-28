@@ -8,7 +8,7 @@ cache:
 before_script:
   - npm install -g typescript vscode
   - npm install
-  - node ./node_modules/vscode/bin/install
+  - node ./bin/install
   - ls
 
 test:
