@@ -6,6 +6,7 @@ cache:
     - node_modules/
 
 before_script:
+  - apt install node-typescript -y
   - npm install
   - ls
 
