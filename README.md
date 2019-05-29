@@ -13,9 +13,9 @@ A basic VS Code extension for showing cryptocurrency prices in the status bar us
 ## Configuration - settings.json
 ```JSON
 {
-    "vscode-cryptosb.currencies": ["BTC", "ETH", "LTC"],
-    "vscode-cryptosb.fiat": "USD",
-	"vscode-cryptosb.refreshInterval": 60000
+  "vscode-cryptosb.currencies": ["BTC", "ETH", "LTC"],
+  "vscode-cryptosb.fiat": "USD",
+  "vscode-cryptosb.refreshInterval": 60000
 }
 ```
 
