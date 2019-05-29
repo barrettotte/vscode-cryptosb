@@ -4,10 +4,10 @@
 A basic VS Code extension for showing cryptocurrency prices in the status bar using CryptoCompare min API
 
 
-[![pipeline status](https://gitlab.com/barrettotte/vscode-cryptosb/badges/master/pipeline.svg)](https://gitlab.com/barrettotte/vscode-cryptosb/commits/master)
+<!--[![pipeline status](https://gitlab.com/barrettotte/vscode-cryptosb/badges/master/pipeline.svg)](https://gitlab.com/barrettotte/vscode-cryptosb/commits/master)-->
 
 
-![screenshot](https://raw.githubusercontent.com/barrettotte/vscode-cryptosb/master/screenshots/screenshot.png?token=ADXGMX37QWIPXVMOEXI4VTC45XGPS)
+![screenshot](https://raw.githubusercontent.com/barrettotte/vscode-cryptosb/master/screenshots/screenshot.png?token=ADXGMX4OIDZ344H5I7T42D245XH52)
 
 
 ## Configuration - settings.json
