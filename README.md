@@ -23,14 +23,19 @@ A basic VS Code extension for showing cryptocurrency prices in the status bar us
 ## Development
 * Setup
   * ```npm install -g yo generator-code vscode```
-  * ```npm i --save-dev ts-loader```
+  * ```npm install --save-dev ts-loader```
+  * ```npm install -g vsce```
   * ```yo code```
 * Debugging
   * F5 with **launch.json** configured
 * Compile ```tsc -p ./``` or ```tsc -watch -p ./```
 
+
 ## Deployment
 * Webpack ```webpack --mode none```
+* ```vsce package```
+* ```vsce create-publisher name```
+* ```vsce publish minor```
 
 
 ## CryptoCompare min API Examples
