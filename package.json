@@ -3,7 +3,7 @@
 	"displayName": "vscode-cryptosb",
 	"author": "Barrett Otte",
 	"license": "MIT",
-	"description": "Display up to 3 cryptocurrency prices in status bar using CryptoCompare API",
+	"description": "Display cryptocurrency prices in status bar using CryptoCompare API",
 	"version": "0.1.0",
 	"publisher": "barrettotte",
 	"repository": {
@@ -41,12 +41,12 @@
 						"ETH",
 						"LTC"
 					],
-					"description": "List of cryptocurrencies to track (up to 3)."
+					"description": "List of cryptocurrencies to track."
 				},
 				"vscode-cryptosb.refreshInterval": {
 					"type": "number",
 					"default": 60000,
-					"description": "Refresh rate to update cryptocurrency price."
+					"description": "Refresh rate to update cryptocurrency price (milliseconds)."
 				}
 			}
 		}
