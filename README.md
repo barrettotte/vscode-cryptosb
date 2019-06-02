@@ -4,6 +4,12 @@
 A basic VS Code extension for showing cryptocurrency prices in the status bar using CryptoCompare min API
 
 
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/barrettotte.vscode-cryptosb.svg)
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/barrettotte.vscode-cryptosb.svg)
+![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/barrettotte.vscode-cryptosb.svg)
+![GitHub](https://img.shields.io/github/license/barrettotte/vscode-cryptosb.svg)
+
+
 https://marketplace.visualstudio.com/items?itemName=barrettotte.vscode-cryptosb
 
 
